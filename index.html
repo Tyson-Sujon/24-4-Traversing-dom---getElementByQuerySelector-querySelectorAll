@@ -64,8 +64,18 @@
             </ul>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="st1">
+            <p class="st2">
+                <span class="st3">
+                    <span class="st4">thank you !</span>
+                </span>
+            </p>
+        </div>
+    </footer>
     <script>
+const TraversEdge=document.querySelector('footer > .st1 > .st2 > .st3 .st4');
+console.log ('final round',TraversEdge.innerText);
 
         console.log('document object model');
         console.log('document object model');
@@ -118,6 +128,18 @@
         console.log("Find list travarse", findLs);
         for (const Ele of findLs) {
             console.log('i got the values -', Ele.innerText);
+
+        }
+        const findLss = document.querySelectorAll('.food ul .jsList');
+        console.log("Find list travarse", findLs);
+        for (const Ele of findLss) {
+            console.log('i got the values 2 -', Ele.innerText);
+
+        }
+        const findLssNew = document.querySelectorAll('.food > ul > .jsList');
+        console.log("Find list travarse", findLs);
+        for (const Ele of findLssNew) {
+            console.log('i got the values 3 -', Ele.innerText);
 
         }
         const oneItem = document.querySelector('.findOutone .kebu');
